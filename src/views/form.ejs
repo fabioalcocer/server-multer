@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trabajando Multer</title>
+    </head>
+    <body>
+        <h2>Sube tu avatar:</h2>
+        <form action="/save" method="post" enctype="multipart/form-data">
+            <div>
+                <label>Nickname</label>
+                <input type="text" name="nickname" />
+            </div>
+            <br />
+            <div>
+                <label>Avatar:</label>
+                <input type="file" name="avatar" />
+            </div>
+            <br />
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
